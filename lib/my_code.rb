@@ -47,13 +47,13 @@ def reduce_to_total(source_array, starting_point = 0)
   total 
 end
 
-def reduce_to_all_true(source_array)
-  index = 0 
-  while index < source_array.length do 
-    if source_array[index] == true
-      return true 
-    end 
-    index += 1 
-  end 
-  false 
-end 
+def reduce_to_any_true(source_array)
+  counter = 0
+  while counter < source_array.size do
+    if source_array[counter] == true
+      return true
+    end
+    counter += 1
+  end
+  false
+end
